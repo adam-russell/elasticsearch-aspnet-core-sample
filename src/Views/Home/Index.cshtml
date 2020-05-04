@@ -1,0 +1,46 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Search</h2>
+        <partial name="_SearchForm" model="null" />
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <h2>Inserted Data</h2>
+        <p>
+            We&rsquo;ve manually inserted data into the Elasticsearch index to test
+            our indexing and search.  You can try the search above, or you can edit the
+            code in Controllers/HomeController.cs if you want to change the data.  The code
+            in HostedServices/ElasticsearchHostedService.cs deletes and recreates the index
+            each time the app is started, so you don&rsquo;t have to worry about cleaning up
+            the old data if you change it. (Obviously, you would not want to do this in production.)
+        </p>
+        <div class="form-group">
+            <label for="inserted-data">Data Inserted into Elasticsearch Index:</label>
+            <textarea class="form-control" name="inserted-data" id="inserted-data" rows="10" readonly="readonly">@Model.InsertedData</textarea>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+<script>
+    function ready(fn) {
+        if (document.readyState != 'loading') {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+
+    ready(function () {
+        document.getElementById('q').focus();
+    });
+</script>
+}

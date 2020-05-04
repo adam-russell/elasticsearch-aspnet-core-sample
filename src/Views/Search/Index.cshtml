@@ -1,0 +1,27 @@
+﻿@model SearchViewModel
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<partial name="_SearchForm" model="Model" />
+
+<h1 class="mt-2">Results for &ldquo;@Model.Term&rdquo;</h1>
+
+@if (Model.Results == null || Model.Results.Count < 1)
+{
+    <em>No results.</em>
+}
+else
+{
+<ul class="list-group">
+    @foreach (var book in Model.Results)
+    {
+    <li class="list-group-item">
+        <h5>@book.Title</h5>
+        <h6><span class="text-muted">by</span> @book.Author.FirstName @book.Author.LastName</h6>
+        <p class="text-muted">@book.Opening</p>
+    </li>
+    }
+</ul>
+}
