@@ -5,8 +5,8 @@ There's also a [post on this application that goes into more detail](https://www
 
 Some screenshots of the application:
 
-![Fuzziness Example](/screenshots/ElasticsearchFuzziness.png?raw=true "Example of Fuzziness" =487x318)
+<img src="https://raw.githubusercontent.com/adam-russell/elasticsearch-aspnet-core-sample/master/screenshots/ElasticsearchFuzziness.png" width="487" height="318" alt="Fuzziness Example">
 
-![Stemmer Example](/screenshots/ElasticsearchStemmer.png?raw=true "Example of Stemmer" =486x293)
+<img src="https://raw.githubusercontent.com/adam-russell/elasticsearch-aspnet-core-sample/master/screenshots/ElasticsearchStemmer.png" width="486" height="293" alt="Stemmer Example">
 
-![Synonym Example](/screenshots/ElasticsearchSynonym.png?raw=true "Example of Synonyms" = 485x356)
+<img src="https://raw.githubusercontent.com/adam-russell/elasticsearch-aspnet-core-sample/master/screenshots/ElasticsearchSynonym.png" width="485" height="356" alt="Stemmer Example">
