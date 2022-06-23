@@ -1,5 +1,5 @@
 # elasticsearch-aspnet-core-sample
-Sample ASP.NET Core 3.1 application using NEST to access Elasticsearch as well as a few common features.
+Sample ASP.NET Core 6 application using NEST to access Elasticsearch as well as a few common features.
 
 There's also a [post on this application that goes into more detail](https://www.adamrussell.com/elasticsearch-with-asp-net-core-using-nest/).
 
